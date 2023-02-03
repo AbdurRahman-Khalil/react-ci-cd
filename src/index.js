@@ -1,13 +1,37 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
+import QRCodeGenerator from './QRCodeGenerator';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    
+    <QRCodeGenerator />
+    
+    {/* <RandomPic /> */}
+    
+    {/* <Card
+      image='https://randomuser.me/api/portraits/med/men/31.jpg'
+      name='Ali'
+      category='Developer'
+      description='He is a hard working developer'
+      year_joined='2010'
+      friends={230}
+    />
+
+    <Card
+      image='https://randomuser.me/api/portraits/med/men/32.jpg'
+      name='Haseeb'
+      category='Senior Developer'
+      description='He is really very hard working developer'
+      year_joined='2008'
+      friends={290}
+    /> */}
+
+    {/* <Counter /> */}
+      
   </React.StrictMode>
 );
 
