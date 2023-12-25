@@ -1,0 +1,539 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Julius+Sans+One&family=Montserrat:wght@500;600;700;800&family=Nanum+Gothic&family=Noto+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,800&family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+:root {
+    --black-color: hsl(0, 0%, 0%);
+    --white-color: hsl(0, 0%, 100%);
+}
+
+/* Header */
+header {
+    min-height: fit-content;
+    background-image: url(./images/HomePage.jpg);
+    background-size: cover;
+    background-position: center;
+    padding-inline: 2.75em;
+}
+
+/* Navbar */
+header > #Navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    position: fixed;
+    top: -5px;
+    left: 35px;
+    right: 40px;
+    max-width: 100%;
+
+    padding-block: 0.65em;
+
+    z-index: 50;
+
+    transition: 0.3s ease-out;
+}
+
+.Navbar-1 {
+    background-color: hsla(0, 0%, 0%, 0.8);
+    border-radius: 0.5rem;
+
+    padding-right: 1em;
+    padding-left: 0.77em;
+}
+
+#Navbar > .logo {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 2.6rem;
+    font-weight: 700;
+    color: var(--black-color);
+
+    transition: 0.25s ease-out;
+}
+
+#Navbar > .logo.logo-white {
+    color: var(--white-color);
+}
+
+#Navbar > .nav-items {
+    display: flex;
+    gap: 1.5rem;
+
+    list-style-type: none;
+
+    transition: 0.4s ease-out;
+}
+
+.nav-items > li {
+    position: relative;
+}
+
+.nav-items > li::before {
+    content: '';
+    
+    position: absolute;
+    bottom: -6px;
+
+    width: 0;
+    height: 0.25em;
+    background:  var(--white-color);
+
+    border-radius: 999px;
+
+    transition: 0.25s ease-out;
+}
+
+.nav-items > li > a {
+    text-decoration: none;
+    font-size: 1.1rem;
+    color: var(--black-color);
+    font-weight: 700;
+
+    transition: 0.24s ease-out;
+}
+
+.nav-items > li > a:hover {
+    color: var(--white-color);
+}
+
+.nav-items > li > a.active {
+    color: var(--white-color);
+    font-weight: 600;
+}
+
+.nav-items > li:has(a.active)::before {
+    width: 100%;
+}
+
+/* when Navbar-1 class applied */
+.Navbar-1 > .nav-items > li > a {
+    color: var(--white-color);
+    font-weight: 600;
+}
+
+.Navbar-1 > .nav-items > li > a:hover {
+    color: hsl(0, 0%, 76%);
+}
+
+/* .nav-items > li:has(a:hover)::before {
+    width: 100%;
+} */
+/* when Navbar-1 class applied */
+
+#Navbar > .get-started {
+    padding: 0.76em 1em;
+
+    background: var(--white-color);
+    outline: 1px solid var(--white-color);
+    border-radius: 0.4rem;
+
+    text-decoration: none;
+    font-size: 1.1rem;
+    color: var(--black-color);
+    font-weight: 600;
+
+    transition: 0.3s ease-out;
+}
+
+#Navbar > .get-started:hover {
+    background-color: transparent;
+    color: var(--white-color);
+}
+
+.toggle-btn {
+    border: none;
+    display: none;
+    background-color: transparent;
+    cursor: pointer;
+    /* backdrop-filter: blur(1rem); */
+
+    /* padding: 0.6em 0.8em; */
+    /* padding-bottom: 0.17em; */    
+}
+
+.toggle-btn > i {
+    font-size: 2.6rem;
+    color: var(--black-color);
+
+    transition: 0.25s ease-out;
+}
+
+.toggle-btn > i.toggle-color {
+    color: var(--white-color);
+}
+
+/* .toggle-btn:first-child {
+    backdrop-filter: blur(0.6rem);
+    padding: 0.6em 0.8em;
+    border-radius: 0.5rem;
+} */
+
+/* Hero */
+header > #Hero {
+    text-align: center;
+
+    padding-top: 7.9em;
+    padding-bottom: 5em;
+}
+
+#Hero > h1 {
+    font-size: 3.5rem;
+    line-height: 1.2em;
+    font-weight: 800;
+
+    margin-bottom: -0.02em;
+}
+
+#Hero > p {
+    font-size: 1.18rem;
+    line-height: 1.4em;
+    font-weight: 600;
+    
+    margin-bottom: 1.6em;
+}
+
+#Hero > .header-form {
+    display: flex;
+    justify-content: center;
+    gap: 0.5em;
+}
+
+.header-form > input { 
+    width: 26em;
+    height: 3.6em;
+
+    background-color: hsla(0, 0%, 100%, 0.4);
+    backdrop-filter: blur(1rem);
+
+    padding: 0 0.8em;
+    padding-bottom: 0.18em;
+
+    border: none;
+    border-radius: 0.4rem;
+    outline: none;
+
+    font-size: 1.1rem;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+    
+    transition: 0.3s ease-out;
+}
+
+.header-form > input::placeholder {
+    color: hsl(0, 0%, 43%);
+    font-weight: 500;
+}
+
+.header-form > input:focus {
+    background-color: hsla(0, 0%, 100%, 0.6);
+}
+
+.header-form > .cta-btn {
+    padding: 0.96em 1.5em;
+
+    background: var(--black-color);
+    border: 1px solid var(--black-color);
+    border-radius: 0.4rem;
+
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: var(--white-color);
+    font-weight: 600;
+
+    transition: 0.3s ease-out;
+}
+
+.header-form > .cta-btn:hover {
+    background-color: transparent;
+    color: var(--black-color);
+}
+
+#Hero > .social-links {
+    margin-top: 4.4em;
+}
+
+.social-links > a {
+    text-decoration: none;
+    margin-inline: 0.6em;
+}
+
+.social-links > a > i {
+    font-size: 1.8rem;
+    /* color: hsla(0, 0%, 97%, 0.7); */
+    color: var(--black-color);    
+
+    padding: 0.2em;
+
+    transition: 0.2s ease-out;
+}
+
+.social-links > a > i:hover {
+    scale: 1.17;
+}
+
+.social-links > a:nth-child(1) > i:hover {
+    color: rgb(23,120,242);
+}
+
+.social-links > a:nth-child(2) > i:hover {
+    color: var(--white-color);
+
+    background-color: var(--black-color);
+    border-radius: 0.4rem;
+
+}
+
+.social-links > a:nth-child(3) > i:hover {
+    color: var(--white-color);
+
+    background: #d6249f;
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%,
+    #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    border-radius: 0.4rem;
+}
+
+.social-links > a:nth-child(4) > i:hover {
+    color: var(--white-color);
+
+    background-color: rgba(42,179,24,255);
+    border-radius: 0.4rem;
+}
+
+.social-links > a:nth-child(5) > i:hover {
+    color: hsl(0, 100%, 50%);
+}
+
+
+
+/* Responsive work */
+/* for Laptops: has(width:1024px;) */
+@media screen and (width <= 1024px) {
+    /* Header */
+    header {
+        padding-inline: 2.2em;
+    }
+    
+    /* Hero */
+    #Hero > h1 {
+        font-size: 3.4rem;
+    }
+}
+
+@media screen and (width <= 810px) {
+    header > #Navbar {
+        padding-block: 0.7em;
+
+        right: 29px;
+        left: 30px;
+    }
+
+    .Navbar-1 {
+        padding-inline: 0.7em;
+    }
+
+    #Navbar > .nav-items {
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 3.3em;
+
+        padding-inline: 4em;
+        padding-top: 2em;
+        background-color: hsla(0, 0%, 0%, 0.15);
+        backdrop-filter: blur(1rem);
+        min-height: 110svh;
+
+        z-index: 15;
+        position: fixed;
+        top: -60px;
+        right: -100%;
+    }
+
+    #Navbar > .nav-items.menu {  
+        right: 0;
+    }
+
+    #Navbar > .nav-items.menu_bg {
+        background-color: hsla(0, 0%, 0%, 0.7);
+    }
+    
+    .nav-items > li > a {
+        font-size: 1.4rem;
+    }
+
+    /* when Navbar-1 class applied */
+    .Navbar-1 > .nav-items > li > a:hover {
+        color: var(--white-color);
+    }
+    /* when Navbar-1 class applied */
+
+    #Navbar > .get-started {
+        display: none;
+        /* position: absolute;
+        top: 20px;
+        right: 46px;
+
+        z-index: 20; */
+    }
+
+    /* .nav-items.menu > .get-started {
+        display: flex;
+    } */
+
+    .toggle-btn {
+        display: unset;
+    }
+}
+
+/* for Tablets: has(width:768px;) */
+@media screen and (width <= 768px) {
+    /* Header */
+    header {
+        padding-inline: 1.7em;
+    }
+
+    /* Hero */
+    #Hero > h1 {
+        font-size: 3.2rem;
+    }
+
+    #Hero > p {
+        font-size: 1.15rem;
+    }
+
+    .header-form > input { 
+        width: 23em;
+    }
+}
+
+@media screen and (width <= 679px) { 
+    .header-form > input { 
+        width: 20em;
+    }
+}
+
+@media screen and (width <= 620px) {   
+    .header-form > input { 
+        width: 18em;
+    }
+}
+
+@media screen and (width <= 584px) {
+    header > #Navbar {
+        right: 27px;
+        left: 28px;
+    }  
+    
+    #Hero > h1 > br {
+        display: none;
+    }
+}
+
+@media screen and (width <= 555px) {
+    header > #Navbar {
+        right: 26px;
+        left: 27px;
+    }  
+    
+    #Hero > p > br {
+        display: none;
+    }
+
+    .header-form > input {
+        font-size: 1.06rem;
+        padding-bottom: 0.1em;
+    }
+}
+
+@media screen and (width <= 479px) {
+    header {
+        padding-inline: 1.7em;
+        min-height: 100vh;
+    }
+
+    header > #Navbar {
+        right: 23px;
+        left: 24px;
+    }  
+
+    /* hero */
+    /* header > #Hero {    
+        padding-bottom: 0;
+    } */
+
+    #Hero > .header-form {
+        flex-wrap: wrap;
+    }
+
+    .header-form > input { 
+        width: 100%;
+        height: 3.8em;
+        padding-bottom: 0.116em;
+
+        font-size: 1.02rem;
+    }
+
+    .header-form > .cta-btn {
+        width: 100%;
+        padding-bottom: 1.1em;
+    }
+}
+
+@media screen and (width <= 430px) { 
+    #Hero > h1 {
+        font-size: 3rem;
+        line-height: 1.1em;
+    
+        margin-bottom: -0.05em;
+    }
+    
+    #Hero > p {
+        font-size: 1.08rem;
+        
+        margin-bottom: 1.2em;
+    }
+}
+
+@media screen and (width <= 385px) {
+    #Hero > h1 {
+        font-size: 2.6rem;
+    }
+    
+    #Hero > p {
+        font-size: 1.03rem;
+    }
+}
+
+@media screen and (width <= 375px) {
+    header {
+        padding-inline: 1.4em;
+    }
+
+    header > #Navbar {
+        right: 19px;
+        left: 20px;
+    } 
+}
+
+@media screen and (width <= 324px) {
+    #Hero > h1 {
+        font-size: 2.3rem;
+    }
+    
+    #Hero > p {
+        font-size: 1rem;
+    }
+
+    .header-form > .cta-btn {
+        padding-bottom: 1em;
+    
+        font-size: 1.16rem;
+    }
+}
+
+
+

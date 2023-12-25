@@ -4,13 +4,29 @@ import './index.css';
 
 import reportWebVitals from './reportWebVitals';
 
-import App from './App';
+// import App from './App';
+
+import Header from './LandingPage/header/Header';
+import Main from './LandingPage/main/Main';
+import Footer from './LandingPage/Footer/Footer';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    {/* <App /> */}
+
+    {/* Landing Page */}
+    <Header />
+    <Main />
+    <Footer 
+      copyrightText={"© Copyright TraveleR. All rights reserved."}
+
+      f_link_1={"About"}
+      f_link_2={"Contact"}
+      f_link_3={"Terms of Use"}
+      f_link_4={"Privacy Policy"}
+    />
 
 
 

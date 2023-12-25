@@ -1,0 +1,442 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Julius+Sans+One&family=Montserrat:wght@500;600;700;800&family=Nanum+Gothic&family=Noto+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,800&family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+:root {
+    --black: hsl(0, 0%, 0%);
+    --white: hsl(0, 0%, 100%);
+}
+
+/* Features */
+main > #Features {
+    padding: 6em 2.75em;
+    background-color: hsl(234, 19%, 93%);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5em;
+}
+
+#Features > .feature {
+    flex: 33.33% 1 1;
+
+    text-align: center;
+}
+
+.feature > .svg-icon {
+    width: 2.4em;
+}
+
+.feature > .text > h3 {
+    font-size: 1.26rem;
+    
+    margin-top: 0.8em;
+    margin-bottom: -0.2em;
+}
+
+.feature > .text > p {
+    font-size: 0.95rem;
+}
+
+/* Services */
+#Services > .service {
+    display: flex;
+    align-items: center;
+}
+
+.service > .service-text {
+    max-width: 50%;
+    padding-inline: 2.75em;
+}
+
+.service > .service-text > h3 {
+    margin-bottom: -0.27em;
+
+    font-size: 1.4rem;
+}
+
+.service > .service-text > p {
+    font-size: 0.95rem;
+}
+
+.service:nth-child(2) {
+    flex-direction: row-reverse;
+}
+
+.service > img {
+    min-width: 50%;
+    height: 20em;
+
+    object-fit: cover;
+    object-position: center;
+}
+
+/* Testimonials */
+main > #Testimonials {
+    padding-inline: 6em;
+    padding-top: 5em;
+    padding-bottom: 3.8em;
+    /* margin-top: 4em; */
+
+    min-height: fit-content;
+    background-image: url(./Testimonials_Section/images/OverTheGlobe.png);
+    background-size: cover;
+    background-position: center;
+}
+
+#Testimonials > h1 {
+    font-size: 2.5rem;
+    color: var(--white);
+
+    margin-bottom: -0.02em;
+}
+
+#Testimonials > p {
+    /* font-weight: 600; */
+    color: hsl(0, 0%, 65%);
+}
+
+#Testimonials > .testimonials-container {
+    margin-top: 4.5em;
+    
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.5em;
+}
+
+.testimonials-container > .testimonial {
+    color: var(--white);
+
+    padding: 0.8em 1.8em;
+    backdrop-filter: blur(2rem);
+
+    outline: 1px solid hsla(0, 0%, 100%, 0.1);
+    border-radius: 0.8rem;
+
+    transition: 0.3s ease-out;
+}
+
+.testimonials-container > .testimonial > h3 {
+    font-size: 1.56rem;
+
+    margin-top: 0.38em;
+    margin-bottom: -0.08em;
+}
+
+.testimonials-container > .testimonial > p {
+    font-size: 0.86rem;
+    color: hsl(0, 0%, 75%);
+
+    margin-bottom: 0.8em;
+}
+
+/* user-info */
+.testimonials-container > .testimonial > .user-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.2em;
+}
+
+.testimonial > .user-info > .user-flag {
+    object-fit: cover;
+    object-position: center;
+
+    width: 2.4em;
+    border-radius: 0;
+}
+
+/* user-text */
+.testimonial > .user-info > .user-text {
+    display: flex;
+    align-items: center;
+    gap: 0.87em;
+}
+
+.testimonial > .user-info > .user-text > .user-img {
+    object-fit: cover;
+    object-position: center;
+
+    width: 3.3em;
+    height: 3.3em;
+    border-radius: 50%;
+}
+
+.testimonial > .user-info > .user-text > div > h4 {
+    margin-bottom: 0.7em;
+}
+
+.testimonial > .user-info > .user-text > div > p {
+    font-size: 0.9rem;
+    color: hsl(0, 0%, 55%);
+
+    margin-top: -0.8em;
+    margin-bottom: 1.35em;
+}
+
+/* Get in touch */
+main > #GetInTouch {
+    padding: 3em 6em;
+    padding-bottom: 3.8em;
+    background-color: hsl(234, 19%, 93%);
+}
+
+#GetInTouch > h1 {
+    font-size: 2.5rem;
+    color: hsl(234, 19%, 23%);
+
+    margin-bottom: -0.2em;
+}
+
+#GetInTouch > p {
+    font-weight: 600;
+    color: hsl(234, 19%, 40%);
+}
+
+#GetInTouch > .content {
+    display: flex;
+    gap: 4.5em;
+
+    margin-top: 2.2em;
+}
+
+.content > .getInTouch-form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.65em;
+
+    flex: 60%;
+}
+
+.getInTouch-form > input {
+    border: 0.17em solid hsl(234, 19%, 45%);
+    border-radius: 0.4rem;
+    outline: none;
+
+    background-color: transparent;
+    padding: 1em 0.8em;
+    padding-bottom: 1.18em;
+
+    color: hsl(234, 19%, 30%);
+    font-weight: 600;
+    font-size: 1.05rem;
+    font-family: 'Montserrat', sans-serif;
+
+    transition: 0.3s ease-out;
+}
+
+.getInTouch-form > input::placeholder, textarea::placeholder {
+    color: hsl(0, 0%, 53%);
+    font-weight: 500;
+}
+
+.getInTouch-form > input:focus {
+    background-color: hsl(234, 19%, 87%);
+}
+
+.getInTouch-form > textarea {
+    border: 0.17em solid hsl(234, 19%, 45%);
+    border-radius: 0.4rem;
+    outline: none;
+
+    background-color: transparent;
+    resize: none;
+    padding: 0.7em 0.8em;
+
+    color: hsl(234, 19%, 30%);
+    font-weight: 600;
+    font-size: 1.05rem;
+    font-family: 'Montserrat', sans-serif;
+
+    transition: 0.3s ease-out;
+} 
+
+.getInTouch-form > button {
+    margin-top: 0.2em;
+    padding: 1em 1.5em;
+    /* padding-bottom: 1.08em; */
+
+    background: hsl(234, 19%, 45%);
+    border: 0.15em solid hsl(234, 19%, 45%);
+    border-radius: 0.4rem;
+
+    font-size: 1.2rem;
+    color: var(--white-color);
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 0.01em;
+    cursor: pointer;
+
+    transition: 0.3s ease-out;
+}
+
+.getInTouch-form > button:hover {
+    background-color: transparent;
+    color: hsl(234, 19%, 45%);
+}
+
+/* Reach Us */
+.content > .reach-us {
+    margin-top: -1.5em;
+
+    flex: 40%;
+}
+
+.reach-us > h3 {
+    position: relative;
+
+    color: hsl(234, 19%, 30%);
+    font-size: 1.66rem;
+    
+    margin-bottom: 0.2em;
+    /* margin-left: 12px; */
+}
+
+.reach-us > h3::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -10px;
+
+    width: 0.2em;
+    height: 100%;
+    
+    background: hsl(234, 19%, 40%);
+    border-radius: 99999rem;
+}
+
+.reach-us > .reash-us-content > h4 {
+    color: hsl(234, 19%, 35%);
+}
+
+
+
+/* Responsive work */
+/* for Laptops: has(width:1024px;) */
+@media screen and (width <= 1024px) {
+    /* services */
+    .service > .service-text {
+        padding-inline: 2.2em;
+    }
+
+    /* Testimonials */
+    main > #Testimonials,
+    main > #GetInTouch {
+        padding-inline: 4.5em;
+    }
+
+    #Testimonials > .testimonials-container {
+        margin-top: 4em;
+
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.65em;
+    }
+
+    .testimonials-container > .testimonial:nth-child(3) {
+        grid-column: span 2;
+    }
+
+    /* get in touch */
+    #GetInTouch > p > br {
+        display: none;
+    }
+}
+
+/* for Tablets: has(width:768px;) */
+@media screen and (width <= 768px) {
+    /* features */
+    main > #Features {
+        flex-wrap: wrap;
+    }
+    
+    /* services */
+    .service > .service-text {
+        padding-inline: 1.7em;
+    }
+
+    /* Testimonialsa */
+    main > #Testimonials,
+    main > #GetInTouch {
+        padding-inline: 3.5em;
+    }
+
+    #Testimonials > .testimonials-container {
+        margin-top: 3.5em;
+
+        grid-template-columns: 1fr;
+    }
+
+    .testimonials-container > .testimonial:nth-child(3) {
+        grid-column: unset;
+    }
+}
+
+@media screen and (width <= 679px) {
+    /* Services */
+    #Services > .service {
+        flex-direction: column;
+        gap: 1em;
+
+        margin-top: 4em;
+    }
+
+    .service > .service-text {
+        max-width: 100%;
+    }
+
+    .service > img {
+        width: 100%;
+        height: 16em;
+    }
+
+    /* get in touch */
+    #GetInTouch > .content {
+        flex-direction: column;
+    }
+
+    .content > .reach-us {
+        margin-left: 10px;
+    }
+}
+
+@media screen and (width <= 575px) {
+    /* features */
+    main > #Features {
+        flex-direction: column;
+    }
+
+    main > #Testimonials,
+    main > #GetInTouch {
+        padding-inline: 2.5em;
+    }
+}
+
+@media screen and (width <= 479px) {
+    main > #Testimonials,
+    main > #GetInTouch {
+        padding-inline: 1.7em;
+    }
+}
+
+@media screen and (width <= 375px) {
+    .service > .service-text,
+    main > #Testimonials,
+    main > #GetInTouch {
+        padding-inline: 1.4em;
+    }
+}
+
+@media screen and (width <= 324px) {
+    #Testimonials > h1,
+    #GetInTouch > h1 {
+        font-size: 2.2rem;
+    }
+    
+    #Testimonials > p,
+    #GetInTouch > p  {
+        font-size: 0.92rem;
+    }
+}
