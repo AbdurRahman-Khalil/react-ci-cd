@@ -1,15 +1,25 @@
 {
   "files": {
-    "main.css": "/react-ci-cd/static/css/main.17f7b72f.css",
-    "main.js": "/react-ci-cd/static/js/main.de85f762.js",
+    "main.css": "/react-ci-cd/static/css/main.e1584f96.css",
+    "main.js": "/react-ci-cd/static/js/main.54b2b6f4.js",
     "static/js/787.b6e8ab4a.chunk.js": "/react-ci-cd/static/js/787.b6e8ab4a.chunk.js",
+    "static/media/OverTheGlobe.png": "/react-ci-cd/static/media/OverTheGlobe.0878789f1e817d8aff25.png",
+    "static/media/HomePage.jpg": "/react-ci-cd/static/media/HomePage.afa25efd61415d84dfe0.jpg",
+    "static/media/EasyToUseCustomize.png": "/react-ci-cd/static/media/EasyToUseCustomize.1b3acc1d0e00b25a4b61.png",
+    "static/media/ResponsiveDesign.jpg": "/react-ci-cd/static/media/ResponsiveDesign.1d968a432df4a7b8bb45.jpg",
+    "static/media/ukFlag.jpg": "/react-ci-cd/static/media/ukFlag.b2ebb3ac8e0aa9f0f84b.jpg",
+    "static/media/Bootstrap5.jpg": "/react-ci-cd/static/media/Bootstrap5.4fde8831ffb7e9194c23.jpg",
+    "static/media/usaFlag.jpg": "/react-ci-cd/static/media/usaFlag.699c2c6b0a4d5fdbac06.jpg",
     "index.html": "/react-ci-cd/index.html",
-    "main.17f7b72f.css.map": "/react-ci-cd/static/css/main.17f7b72f.css.map",
-    "main.de85f762.js.map": "/react-ci-cd/static/js/main.de85f762.js.map",
+    "static/media/bootstrap.svg": "/react-ci-cd/static/media/bootstrap.51e87e6afbeff58100ede34247defe49.svg",
+    "static/media/layer-group-solid.svg": "/react-ci-cd/static/media/layer-group-solid.cc96f8287e185d64bdaf007df0f753db.svg",
+    "static/media/pen-to-square-solid.svg": "/react-ci-cd/static/media/pen-to-square-solid.decf14385ab7e16cd762dbeff2db7942.svg",
+    "main.e1584f96.css.map": "/react-ci-cd/static/css/main.e1584f96.css.map",
+    "main.54b2b6f4.js.map": "/react-ci-cd/static/js/main.54b2b6f4.js.map",
     "787.b6e8ab4a.chunk.js.map": "/react-ci-cd/static/js/787.b6e8ab4a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.17f7b72f.css",
-    "static/js/main.de85f762.js"
+    "static/css/main.e1584f96.css",
+    "static/js/main.54b2b6f4.js"
   ]
 }
